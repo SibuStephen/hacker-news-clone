@@ -5,7 +5,9 @@
   "license": "MIT",
   "author": "Cattla Lee <cattla@outlook.com>",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "css-modules-require-hook": "^3.0.0-beta",
@@ -21,7 +23,8 @@
     "redux-thunk": "^1.0.3",
     "request": "^2.61.0",
     "scroll-behavior": "^0.3.2",
-    "serialize-javascript": "^1.1.2"
+    "serialize-javascript": "^1.1.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.0",
@@ -39,5 +42,6 @@
     "style-loader": "^0.13.0",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.5.1"
-  }
+  },
+  "snyk": true
 }
